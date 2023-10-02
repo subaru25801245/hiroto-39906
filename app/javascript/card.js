@@ -1,4 +1,5 @@
 const pay = () => {
+  console.log("OK")
   if (document.getElementById('number-form') && 
       document.getElementById('expiry-form') && 
       document.getElementById('cvc-form')) {
