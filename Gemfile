@@ -55,6 +55,11 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'gimei'
+  gem 'capistrano'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano3-unicorn'
 end
 
 group :development do
@@ -85,8 +90,8 @@ gem 'payjp'
 gem 'gon'
 
 group :production do
-  gem 'pg', '1.1.4' # PostgreSQLのバージョンに適したバージョンを指定します。
-  gem 'unicorn', '6.1.0'
+gem 'pg', '~> 1.2'
+gem 'unicorn', '6.1.0'
 end
 
 gem "aws-sdk-s3", require: false
