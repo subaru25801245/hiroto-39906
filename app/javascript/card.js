@@ -1,5 +1,4 @@
 const pay = () => {
-  console.log("OK")
   if (document.getElementById('number-form') && 
       document.getElementById('expiry-form') && 
       document.getElementById('cvc-form')) {
@@ -25,7 +24,7 @@ const pay = () => {
           const renderDom = document.getElementById("charge-form");
           const tokenObj = `<input value=${token} name='buy_record_form[token]' type="hidden">`;
           renderDom.insertAdjacentHTML("beforeend", tokenObj);
-        }
+        }  
         numberElement.clear();
         expiryElement.clear();
         cvcElement.clear();
