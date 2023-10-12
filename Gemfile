@@ -90,7 +90,7 @@ gem 'payjp'
 gem 'gon'
 
 group :production do
-gem 'pg', '~> 1.2'
+gem 'pg', '1.1.4' # PostgreSQLのバージョンに適したバージョンを指定します。
 gem 'unicorn', '6.1.0'
 end
 
